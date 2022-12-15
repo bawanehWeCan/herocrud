@@ -1,18 +1,9 @@
 
-https://user-images.githubusercontent.com/62506582/200510814-9b2ca922-bd35-4e02-a236-047c4b7b118d.mp4
+
 
 <p align="center">Laravel starter app and CRUD generator.</p>
 
-<div align="center">
 
-[![All Contributors](https://img.shields.io/github/contributors/Zzzul/generator?style=flat-square)](https://github.com/Zzzul/generator/graphs/contributors)
-![GitHub last commit](https://img.shields.io/github/last-commit/Zzzul/generator.svg?style=flat-square)
-[![License](https://img.shields.io/github/license/Zzzul/generator.svg?style=flat-square)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/Zzzul/generator?style=flat-square)](Issues)
-[![Forks](https://img.shields.io/github/forks/Zzzul/generator?style=flat-square)](Forks)
-[![Stars](https://img.shields.io/github/stars/Zzzul/generator?style=flat-square)](Stars)
-
-</div>
 
 ## Table of Contents
 1. [Requirements](#requirements)
@@ -21,7 +12,7 @@ https://user-images.githubusercontent.com/62506582/200510814-9b2ca922-bd35-4e02-
 4. [Setup](#setup)
 5. [Usage](#usage)
 6. [License](#license)
-7. [Support](#support)
+
 
 ## Requirements
 - [PHP ^8.1](https://www.php.net/releases/8.1/en.php)
@@ -35,7 +26,7 @@ https://user-images.githubusercontent.com/62506582/200510814-9b2ca922-bd35-4e02-
 - [Yajra datatable - ^10.x](https://yajrabox.com/docs/laravel-datatables/master/installation)
 - [Intervention Image - ^2.x](https://image.intervention.io/v2)
 - [Mazer template - ^2.x](https://github.com/zuramai/mazer/)
-- [Generator - ^0.1.x](https://github.com/Zzzul/generator-src/)
+
 
 ## Features
 - [x] Authentication ([Laravel Fortify](https://laravel.com/docs/9.x/fortify))
@@ -59,7 +50,7 @@ https://user-images.githubusercontent.com/62506582/200510814-9b2ca922-bd35-4e02-
 ## Setup
 1. Clone or download from [Releases](https://github.com/Zzzul/generator/releases)
 ```bash
-git clone https://github.com/Zzzul/generator.git
+git clone
 ```
 
 2. CD into `/generator`
@@ -114,9 +105,3 @@ Account
 ## License
 [MIT License](./LICENSE)
 
-## Support
-<a href="https://www.buymeacoffee.com/mzulfahmi" target="_blank">
-<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
-</a>
-
-Or you can support me at [Ko-fi](https://ko-fi.com/mzulfahmi) or [Saweria](https://saweria.co/zzzul)
