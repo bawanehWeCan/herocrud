@@ -144,6 +144,69 @@ return [
             ]
         ]
     ],
-
+    [
+        'header' => 'School Grades',
+        'permissions' => [
+            'school grade view'
+        ],
+        'menus' => [
+            [
+                'title' => 'School Grades',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/school-grades',
+                'permission' => 'school grade view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Classrooms',
+        'permissions' => [
+            'classroom view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Classrooms',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/classrooms',
+                'permission' => 'classroom view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Subjects',
+        'permissions' => [
+            'subject view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Subjects',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/subjects',
+                'permission' => 'subject view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Classrooms',
+        'permissions' => [
+            'classroom view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Classrooms',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/classrooms',
+                'permission' => 'classroom view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ]
 ]
 ];

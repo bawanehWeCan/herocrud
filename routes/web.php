@@ -17,3 +17,15 @@ Route::middleware(['auth', 'web'])->group(function () {
     Route::resource('users', UserController::class);
     Route::resource('roles', RoleAndPermissionController::class);
 });
+
+Route::resource('school-grades', App\Http\Controllers\SchoolGradeController::class)->middleware('auth');
+Route::resource('classes', App\Http\Controllers\ClassController::class)->middleware('auth');
+Route::resource('classrooms', App\Http\Controllers\ClassroomController::class)->middleware('auth');
+
+Route::resource('classrooms', App\Http\Controllers\ClassroomController::class)->middleware('auth');
+
+Route::resource('school-grades', App\Http\Controllers\SchoolGradeController::class)->middleware('auth');
+Route::resource('classrooms', App\Http\Controllers\ClassroomController::class)->middleware('auth');
+Route::resource('units', App\Http\Controllers\UnitController::class)->middleware('auth');
+Route::resource('subjects', App\Http\Controllers\SubjectController::class)->middleware('auth');
+Route::resource('subjects', App\Http\Controllers\SubjectController::class)->middleware('auth');
