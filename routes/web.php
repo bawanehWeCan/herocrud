@@ -29,3 +29,4 @@ Route::resource('classrooms', App\Http\Controllers\ClassroomController::class)->
 Route::resource('units', App\Http\Controllers\UnitController::class)->middleware('auth');
 Route::resource('subjects', App\Http\Controllers\SubjectController::class)->middleware('auth');
 Route::resource('subjects', App\Http\Controllers\SubjectController::class)->middleware('auth');
+Route::resource('units', App\Http\Controllers\UnitController::class)->middleware('auth');

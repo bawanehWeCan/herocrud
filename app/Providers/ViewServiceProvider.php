@@ -48,5 +48,12 @@ class ViewServiceProvider extends ServiceProvider
             );
         });
 
+				View::composer(['units.create', 'units.edit'], function ($view) {
+            return $view->with(
+                'subjects',
+                \App\Models\Subject::select('id', 'name')->get()
+            );
+        });
+
 	}
 }

@@ -207,6 +207,22 @@ return [
                 'submenus' => []
             ]
         ]
+    ],
+    [
+        'header' => 'Units',
+        'permissions' => [
+            'unit view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Units',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/units',
+                'permission' => 'unit view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
     ]
 ]
 ];

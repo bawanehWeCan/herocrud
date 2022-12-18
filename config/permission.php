@@ -187,5 +187,5 @@ return [
                 'test view',
             ]
         ],['group' => 'school grades', 'access' => ['school grade view', 'school grade create', 'school grade edit', 'school grade delete']],['group' => 'classes', 'access' => ['class view', 'class create', 'class edit', 'class delete']],
-['group' => 'subjects', 'access' => ['subject view', 'subject create', 'subject edit', 'subject delete']],['group' => 'classrooms', 'access' => ['classroom view', 'classroom create', 'classroom edit', 'classroom delete']], 
+['group' => 'subjects', 'access' => ['subject view', 'subject create', 'subject edit', 'subject delete']],['group' => 'classrooms', 'access' => ['classroom view', 'classroom create', 'classroom edit', 'classroom delete']],['group' => 'units', 'access' => ['unit view', 'unit create', 'unit edit', 'unit delete']], 
 		],];
