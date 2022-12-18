@@ -55,5 +55,33 @@ class ViewServiceProvider extends ServiceProvider
             );
         });
 
+				View::composer(['lessons.create', 'lessons.edit'], function ($view) {
+            return $view->with(
+                'units',
+                \App\Models\Unit::select('id', 'name')->get()
+            );
+        });
+
+				View::composer(['questions.create', 'questions.edit'], function ($view) {
+            return $view->with(
+                'subjects',
+                \App\Models\Subject::select('id', 'name')->get()
+            );
+        });
+
+		View::composer(['questions.create', 'questions.edit'], function ($view) {
+            return $view->with(
+                'lessons',
+                \App\Models\Lesson::select('id', 'name')->get()
+            );
+        });
+
+		View::composer(['questions.create', 'questions.edit'], function ($view) {
+            return $view->with(
+                'units',
+                \App\Models\Unit::select('id', 'name')->get()
+            );
+        });
+
 	}
 }

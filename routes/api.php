@@ -60,3 +60,25 @@ Route::post('unit-create', [App\Http\Controllers\Api\UnitController::class, 'sav
 Route::get('unit/{id}', [App\Http\Controllers\Api\UnitController::class, 'view']);
 Route::get('unit/delete/{id}', [App\Http\Controllers\Api\UnitController::class, 'delete']);
 Route::post('unit/edit/{id}', [App\Http\Controllers\Api\UnitController::class, 'edit']);
+
+
+
+
+
+//Lesson
+Route::get('lessons', [App\Http\Controllers\Api\LessonController::class, 'list']);
+Route::post('lesson-create', [App\Http\Controllers\Api\LessonController::class, 'save']);
+Route::get('lesson/{id}', [App\Http\Controllers\Api\LessonController::class, 'view']);
+Route::get('lesson/delete/{id}', [App\Http\Controllers\Api\LessonController::class, 'delete']);
+Route::post('lesson/edit/{id}', [App\Http\Controllers\Api\LessonController::class, 'edit']);
+
+
+
+
+
+//Question
+Route::get('questions', [App\Http\Controllers\Api\QuestionController::class, 'list']);
+Route::post('question-create', [App\Http\Controllers\Api\QuestionController::class, 'save']);
+Route::get('question/{id}', [App\Http\Controllers\Api\QuestionController::class, 'view']);
+Route::get('question/delete/{id}', [App\Http\Controllers\Api\QuestionController::class, 'delete']);
+Route::post('question/edit/{id}', [App\Http\Controllers\Api\QuestionController::class, 'edit']);

@@ -30,3 +30,5 @@ Route::resource('units', App\Http\Controllers\UnitController::class)->middleware
 Route::resource('subjects', App\Http\Controllers\SubjectController::class)->middleware('auth');
 Route::resource('subjects', App\Http\Controllers\SubjectController::class)->middleware('auth');
 Route::resource('units', App\Http\Controllers\UnitController::class)->middleware('auth');
+Route::resource('lessons', App\Http\Controllers\LessonController::class)->middleware('auth');
+Route::resource('questions', App\Http\Controllers\QuestionController::class)->middleware('auth');

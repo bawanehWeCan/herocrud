@@ -223,6 +223,38 @@ return [
                 'submenus' => []
             ]
         ]
+    ],
+    [
+        'header' => 'Lessons',
+        'permissions' => [
+            'lesson view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Lessons',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/lessons',
+                'permission' => 'lesson view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Questions',
+        'permissions' => [
+            'question view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Questions',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/questions',
+                'permission' => 'question view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
     ]
 ]
 ];
