@@ -82,3 +82,34 @@ Route::post('question-create', [App\Http\Controllers\Api\QuestionController::cla
 Route::get('question/{id}', [App\Http\Controllers\Api\QuestionController::class, 'view']);
 Route::get('question/delete/{id}', [App\Http\Controllers\Api\QuestionController::class, 'delete']);
 Route::post('question/edit/{id}', [App\Http\Controllers\Api\QuestionController::class, 'edit']);
+
+
+
+
+
+//Answer
+Route::get('answers', [App\Http\Controllers\Api\AnswerController::class, 'list']);
+Route::post('answer-create', [App\Http\Controllers\Api\AnswerController::class, 'save']);
+Route::get('answer/{id}', [App\Http\Controllers\Api\AnswerController::class, 'view']);
+Route::get('answer/delete/{id}', [App\Http\Controllers\Api\AnswerController::class, 'delete']);
+Route::post('answer/edit/{id}', [App\Http\Controllers\Api\AnswerController::class, 'edit']);
+
+
+
+
+//Result
+Route::get('results', [App\Http\Controllers\Api\ResultController::class, 'list']);
+Route::post('result-create', [App\Http\Controllers\Api\ResultController::class, 'save']);
+Route::get('result/{id}', [App\Http\Controllers\Api\ResultController::class, 'view']);
+Route::get('result/delete/{id}', [App\Http\Controllers\Api\ResultController::class, 'delete']);
+Route::post('result/edit/{id}', [App\Http\Controllers\Api\ResultController::class, 'edit']);
+
+
+
+
+//Mark
+Route::get('marks', [App\Http\Controllers\Api\MarkController::class, 'list']);
+Route::post('mark-create', [App\Http\Controllers\Api\MarkController::class, 'save']);
+Route::get('mark/{id}', [App\Http\Controllers\Api\MarkController::class, 'view']);
+Route::get('mark/delete/{id}', [App\Http\Controllers\Api\MarkController::class, 'delete']);
+Route::post('mark/edit/{id}', [App\Http\Controllers\Api\MarkController::class, 'edit']);

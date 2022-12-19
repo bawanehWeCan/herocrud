@@ -83,5 +83,47 @@ class ViewServiceProvider extends ServiceProvider
             );
         });
 
+				View::composer(['answers.create', 'answers.edit'], function ($view) {
+            return $view->with(
+                'questions',
+                \App\Models\Question::select('id', 'question')->get()
+            );
+        });
+
+		View::composer(['results.create', 'results.edit'], function ($view) {
+            return $view->with(
+                'users',
+                \App\Models\User::select('id', 'name')->get()
+            );
+        });
+
+		View::composer(['marks.create', 'marks.edit'], function ($view) {
+            return $view->with(
+                'questions',
+                \App\Models\Question::select('id', 'question')->get()
+            );
+        });
+
+		View::composer(['marks.create', 'marks.edit'], function ($view) {
+            return $view->with(
+                'answers',
+                \App\Models\Answer::select('id', 'description')->get()
+            );
+        });
+
+		View::composer(['marks.create', 'marks.edit'], function ($view) {
+            return $view->with(
+                'results',
+                \App\Models\Result::select('id', 'name')->get()
+            );
+        });
+
+		View::composer(['marks.create', 'marks.edit'], function ($view) {
+            return $view->with(
+                'users',
+                \App\Models\User::select('id', 'name')->get()
+            );
+        });
+
 	}
 }

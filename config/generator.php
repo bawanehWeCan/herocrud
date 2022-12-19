@@ -255,6 +255,54 @@ return [
                 'submenus' => []
             ]
         ]
+    ],
+    [
+        'header' => 'Answers',
+        'permissions' => [
+            'answer view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Answers',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/answers',
+                'permission' => 'answer view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Results',
+        'permissions' => [
+            'result view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Results',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/results',
+                'permission' => 'result view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Marks',
+        'permissions' => [
+            'mark view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Marks',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/marks',
+                'permission' => 'mark view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
     ]
 ]
 ];

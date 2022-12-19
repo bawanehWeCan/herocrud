@@ -32,3 +32,6 @@ Route::resource('subjects', App\Http\Controllers\SubjectController::class)->midd
 Route::resource('units', App\Http\Controllers\UnitController::class)->middleware('auth');
 Route::resource('lessons', App\Http\Controllers\LessonController::class)->middleware('auth');
 Route::resource('questions', App\Http\Controllers\QuestionController::class)->middleware('auth');
+Route::resource('answers', App\Http\Controllers\AnswerController::class)->middleware('auth');
+Route::resource('results', App\Http\Controllers\ResultController::class)->middleware('auth');
+Route::resource('marks', App\Http\Controllers\MarkController::class)->middleware('auth');
