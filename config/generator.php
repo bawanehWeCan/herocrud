@@ -131,6 +131,11 @@ return [
                         'title' => 'Users',
                         'route' => '/users',
                         'permission' => 'user view'
+                    ],
+                    [
+                        'title' => 'Profile',
+                        'route' => '/profiles',
+                        'permission' => 'profile view'
                     ]
                 ]
             ],
@@ -299,6 +304,38 @@ return [
                 'icon' => '<i class="bi bi-people"></i>',
                 'route' => '/marks',
                 'permission' => 'mark view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Tips',
+        'permissions' => [
+            'tip view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Tips',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/tips',
+                'permission' => 'tip view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Blogs',
+        'permissions' => [
+            'blog view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Blogs',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/blogs',
+                'permission' => 'blog view',
                 'permissions' => [],
                 'submenus' => []
             ]

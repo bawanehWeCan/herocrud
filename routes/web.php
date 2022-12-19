@@ -35,3 +35,6 @@ Route::resource('questions', App\Http\Controllers\QuestionController::class)->mi
 Route::resource('answers', App\Http\Controllers\AnswerController::class)->middleware('auth');
 Route::resource('results', App\Http\Controllers\ResultController::class)->middleware('auth');
 Route::resource('marks', App\Http\Controllers\MarkController::class)->middleware('auth');
+Route::resource('tips', App\Http\Controllers\TipController::class)->middleware('auth');
+Route::resource('blogs', App\Http\Controllers\BlogController::class)->middleware('auth');
+Route::resource('profiles', App\Http\Controllers\UserProfileController::class)->middleware('auth');

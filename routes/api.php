@@ -113,3 +113,35 @@ Route::post('mark-create', [App\Http\Controllers\Api\MarkController::class, 'sav
 Route::get('mark/{id}', [App\Http\Controllers\Api\MarkController::class, 'view']);
 Route::get('mark/delete/{id}', [App\Http\Controllers\Api\MarkController::class, 'delete']);
 Route::post('mark/edit/{id}', [App\Http\Controllers\Api\MarkController::class, 'edit']);
+
+
+
+
+
+//Tips
+Route::get('tips', [App\Http\Controllers\Api\TipController::class, 'list']);
+Route::post('tip-create', [App\Http\Controllers\Api\TipController::class, 'save']);
+Route::get('tip/{id}', [App\Http\Controllers\Api\TipController::class, 'view']);
+Route::get('tip/delete/{id}', [App\Http\Controllers\Api\TipController::class, 'delete']);
+Route::post('tip/edit/{id}', [App\Http\Controllers\Api\TipController::class, 'edit']);
+
+
+
+
+//Blog
+Route::get('blogs', [App\Http\Controllers\Api\BlogController::class, 'list']);
+Route::post('blog-create', [App\Http\Controllers\Api\BlogController::class, 'save']);
+Route::get('blog/{id}', [App\Http\Controllers\Api\BlogController::class, 'view']);
+Route::get('blog/delete/{id}', [App\Http\Controllers\Api\BlogController::class, 'delete']);
+Route::post('blog/edit/{id}', [App\Http\Controllers\Api\BlogController::class, 'edit']);
+
+
+
+
+
+//Profile
+Route::get('profiles', [App\Http\Controllers\Api\ProfileController::class, 'list']);
+Route::post('profile-create', [App\Http\Controllers\Api\ProfileController::class, 'save']);
+Route::get('profile/{id}', [App\Http\Controllers\Api\ProfileController::class, 'view']);
+Route::get('profile/delete/{id}', [App\Http\Controllers\Api\ProfileController::class, 'delete']);
+Route::post('profile/edit/{id}', [App\Http\Controllers\Api\ProfileController::class, 'edit']);

@@ -125,5 +125,26 @@ class ViewServiceProvider extends ServiceProvider
             );
         });
 
+				View::composer(['profiles.create', 'profiles.edit'], function ($view) {
+            return $view->with(
+                'classrooms',
+                \App\Models\Classroom::select('id', 'name')->get()
+            );
+        });
+
+		View::composer(['profiles.create', 'profiles.edit'], function ($view) {
+            return $view->with(
+                'schoolGrades',
+                \App\Models\SchoolGrade::select('id', 'name')->get()
+            );
+        });
+
+		View::composer(['profiles.create', 'profiles.edit'], function ($view) {
+            return $view->with(
+                'users',
+                \App\Models\User::select('id', 'name')->get()
+            );
+        });
+
 	}
 }
