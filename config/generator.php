@@ -131,6 +131,11 @@ return [
                         'title' => 'Users',
                         'route' => '/users',
                         'permission' => 'user view'
+                    ],
+                    [
+                        'title' => 'Profile',
+                        'route' => '/profiles',
+                        'permission' => 'profile view'
                     ]
                 ]
             ],
@@ -144,6 +149,197 @@ return [
             ]
         ]
     ],
-
+    [
+        'header' => 'School Grades',
+        'permissions' => [
+            'school grade view'
+        ],
+        'menus' => [
+            [
+                'title' => 'School Grades',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/school-grades',
+                'permission' => 'school grade view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Classrooms',
+        'permissions' => [
+            'classroom view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Classrooms',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/classrooms',
+                'permission' => 'classroom view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Subjects',
+        'permissions' => [
+            'subject view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Subjects',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/subjects',
+                'permission' => 'subject view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Classrooms',
+        'permissions' => [
+            'classroom view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Classrooms',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/classrooms',
+                'permission' => 'classroom view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Units',
+        'permissions' => [
+            'unit view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Units',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/units',
+                'permission' => 'unit view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Lessons',
+        'permissions' => [
+            'lesson view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Lessons',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/lessons',
+                'permission' => 'lesson view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Questions',
+        'permissions' => [
+            'question view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Questions',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/questions',
+                'permission' => 'question view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Answers',
+        'permissions' => [
+            'answer view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Answers',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/answers',
+                'permission' => 'answer view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Results',
+        'permissions' => [
+            'result view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Results',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/results',
+                'permission' => 'result view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Marks',
+        'permissions' => [
+            'mark view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Marks',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/marks',
+                'permission' => 'mark view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Tips',
+        'permissions' => [
+            'tip view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Tips',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/tips',
+                'permission' => 'tip view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ],
+    [
+        'header' => 'Blogs',
+        'permissions' => [
+            'blog view'
+        ],
+        'menus' => [
+            [
+                'title' => 'Blogs',
+                'icon' => '<i class="bi bi-people"></i>',
+                'route' => '/blogs',
+                'permission' => 'blog view',
+                'permissions' => [],
+                'submenus' => []
+            ]
+        ]
+    ]
 ]
 ];

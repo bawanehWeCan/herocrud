@@ -40,6 +40,8 @@
                                     <thead>
                                         <tr>
                                             <th>{{ __('Title') }}</th>
+											<th>{{ __('Description') }}</th>
+											<th>{{ __('Image') }}</th>
                                             <th>{{ __('Created At') }}</th>
                                             <th>{{ __('Updated At') }}</th>
                                             <th>{{ __('Action') }}</th>
@@ -73,6 +75,21 @@
                     data: 'title',
                     name: 'title',
                 },
+				{
+                    data: 'description',
+                    name: 'description',
+                },
+				{
+                    data: 'image',
+                    name: 'image',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data, type, full, meta) {
+                        return `<div class="avatar">
+                            <img src="${data}" alt="Image">
+                        </div>`;
+                        }
+                    },
                 {
                     data: 'created_at',
                     name: 'created_at'

@@ -38,6 +38,20 @@
                                             <td class="fw-bold">{{ __('Title') }}</td>
                                             <td>{{ $blog->title }}</td>
                                         </tr>
+									<tr>
+                                            <td class="fw-bold">{{ __('Description') }}</td>
+                                            <td>{{ $blog->description }}</td>
+                                        </tr>
+									<tr>
+                                        <td class="fw-bold">{{ __('Image') }}</td>
+                                        <td>
+                                            @if ($blog->image == null)
+                                            <img src="https://via.placeholder.com/350?text=No+Image+Avaiable" alt="Image"  class="rounded" width="200" height="150" style="object-fit: cover">
+                                            @else
+                                                <img src="{{ asset('storage/uploads/images/' . $blog->image) }}" alt="Image" class="rounded" width="200" height="150" style="object-fit: cover">
+                                            @endif
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="fw-bold">{{ __('Created at') }}</td>
                                         <td>{{ $blog->created_at->format('d/m/Y H:i') }}</td>
